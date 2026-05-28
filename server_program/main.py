@@ -19,5 +19,7 @@ async def upload_audio(file: UploadFile = File(...)):
         
     return {"status": "success", "filename": file.filename, "message": "Файл збережено"}
 
+def add():
+ print("dfdsf")
 # Запуск сервера командою в терміналі:
 # uvicorn server:app --host 0.0.0.0 --port 8000
