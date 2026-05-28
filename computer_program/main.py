@@ -41,6 +41,8 @@ class File:
         except Exception as e:
             print(f"File could not be sent: {e}")
 
+
+
 def get_file(folder_path):
     if not os.path.exists(folder_path):
         print("Folder not found!")
@@ -52,6 +54,7 @@ def get_file(folder_path):
             return File(item_path)
             
     return None
+
 
 print("Program started...")
 while True:
